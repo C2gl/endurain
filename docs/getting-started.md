@@ -31,7 +31,7 @@ Environment variable  | Default value | Optional | Notes |
 | DB_USER | endurain | Yes | N/A |
 | DB_PASSWORD | No default set | `No` | N/A |
 | DB_DATABASE | endurain | Yes | N/A |
-| SECRET_KEY | No default set | `No` | Run `openssl rand -hex 32` on a terminal to get a secret |
+| SECRET_KEY | No default set | `No` | Run `openssl rand -hex 32` on a terminal to get a secret, you could also use browser based ssl generators like [https://www.cryptool.org/en/cto/openssl/](https://www.cryptool.org/en/cto/openssl/)  |
 | FERNET_KEY | No default set | `No` | Run `python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"` on a terminal to get a secret or go to [https://fernetkeygen.com](https://fernetkeygen.com). Example output is `7NfMMRSCWcoNDSjqBX8WoYH9nTFk1VdQOdZY13po53Y=` |
 | ALGORITHM | HS256 | Yes | Currently only HS256 is supported |
 | ACCESS_TOKEN_EXPIRE_MINUTES | 15 | Yes | Time in minutes |
